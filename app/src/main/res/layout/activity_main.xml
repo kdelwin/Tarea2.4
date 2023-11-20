@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/viewSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIBUJA TU FIRMA"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.tarea2_4.CanvasField
+            android:id="@+id/firmas"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Ingrese descripcion"
+                android:inputType="textMultiLine"/>
+
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:text="Guardar" />
+
+        <Button
+                android:id="@+id/brnGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:text="Galeria" />
+    </LinearLayout>
+
+</LinearLayout>
